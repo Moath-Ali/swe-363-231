@@ -1,0 +1,34 @@
+th{
+    text-transform: uppercase;
+}
+a{
+    color: green;
+}
+.top{
+    background-color: red;
+}
+em{
+    background-color: blue;
+}
+#the_most_important{
+    text-transform: uppercase;
+    background-color: gold;
+}
+h2{
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+tr:hover > td, thead:hover{
+    background-color: lightblue;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li:first-child{
+    text-decoration: underline;
+}
+tbody tr:nth-child(odd){
+    background-color: aqua;
+}

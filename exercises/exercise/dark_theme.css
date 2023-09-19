@@ -6,3 +6,11 @@ html{
 table{
     border: solid rgb(183, 88, 0);
 }
+.red:hover > .last, .red:hover {
+    
+    background-color: red;
+    
+}
+.last {
+    background-color: black;
+}

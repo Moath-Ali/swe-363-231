@@ -14,3 +14,19 @@ table{
 .last {
     background-color: black;
 }
+
+h1{
+    color: white; 
+    font-size: 34px; 
+    font-family: Aeonik; 
+    font-weight: 400; 
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+}
+p{
+    color: white; 
+    font-size: 12px; 
+    font-family: Source Code Pro; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}

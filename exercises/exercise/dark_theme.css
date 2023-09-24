@@ -84,6 +84,7 @@ a{
     to {
       opacity: 0;
     }
+    
 }
 
 body *:not(.loader){

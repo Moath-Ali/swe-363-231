@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dark_theme.css">
+
+    <title>أصنع دورتك</title>
+</head>
+
+<body>
+    <h2>قم بتقديم دورتك، ولكن لنقم بعرفتك قليلا في البداية.</h2>
+
+
+    <form action="Thanks--ar.html">
+        <section>
+            <label for="FName" autocomplete="given-name">الأسم الاول</label>
+            <input placeholder="ex. Muath" type="text" name="Fname" id="FName">
+
+            <label for="LName">الأسم الأخير</label>
+            <input placeholder="ex. Alabeedi" type="text" name="Lname" id="LName" autocomplete="given-name">
+        </section>
+        <section>
+            <label for="email">عنوان البريد</label>
+            <input type="email" name="email" placeholder="ex. example.gmail.com" autocomplete="given-name">
+        </section>
+        <section>
+            <label for="cv">ارفع سيرتك الذاتية</label>
+
+            <input type="file" name="cv" />
+        </section>
+        <section>
+            <label for="Course-Subject">اختر موضوع الدورة</label>
+            <input list="Courses" id="Course-Subject" name="Course-Subject" />
+    
+            <datalist id="Courses">
+                <option value="الفن"></option>
+                <option value="الموسيقى"></option>
+                <option value="البرمجة"></option>
+                <option value="عمل الخشب"></option>
+                <option value="الدين"></option>
+            </datalist>
+        </section>
+
+        <section>
+            <label for="interview">وقت المقابلة</label>
+            <input type="time" name="interview" value="12:30" />
+
+        </section>
+        <section>
+            <label><b>الجنس</b></label>
+
+            <label for="male">رجل</label>
+            <input type="radio" name="gender" id="male">
+
+            <label for="female">امرأة</label>
+            <input type="radio" name="gender" id="female">
+        </section>
+        <section>
+            <label for="terms">هل توافق على قوانين الاستخدام؟</label>
+            <input type="checkbox">
+        </section>
+        <section>
+            <button type="submit">تسليم</button>
+        </section>
+
+    </form>
+</body>
+
+</html>

@@ -30,3 +30,37 @@ p{
     font-weight: 400; 
     word-wrap: break-word;
 }
+button:hover{
+    background-color: lightblue;
+    transition:  1s;
+}
+.nav{
+    margin: 0;
+    background-color: rgba(192, 175, 175, 0.193);
+
+    display: flex;
+    align-items: center;
+}
+
+nav img:hover+ .links #first{
+    color: white;
+    transition: 1s;
+}
+nav img:hover+ .links #second{
+    color: white;
+    transition: 1s;
+    transition-delay: 2s;
+}
+nav img:hover+ .links #third{
+    color: white;
+    transition: 1s;
+    transition-delay: 3s;
+}
+.links a{
+    color: transparent;
+}
+a{
+    color:rgb(183, 88, 0);
+    margin: 5px 5px;
+}
+

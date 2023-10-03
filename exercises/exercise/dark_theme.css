@@ -155,3 +155,32 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+main div img{
+    max-width: 100%;
+}
+#burger{
+    width:15px; 
+    height:15px;
+}
+
+@media (1px <= width <= 769px) {
+    main{
+        max-width: 100%;
+    }
+    main div img{
+        max-width: 100%;
+    }
+    table{
+        font-size: 2em;
+    }
+    footer{
+        font-size: 1.2em;
+    }
+    .catchy-p{
+        font-size: 1.5em;
+    }
+    #burger{
+        width:25px;
+        height:25px;
+    }
+}

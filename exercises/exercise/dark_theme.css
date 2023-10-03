@@ -180,11 +180,18 @@ main div img{
 }
 .card-body{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4em;
+    background-color:#54617a ;
+    color: white;
     
+}
+.reset-btn{
+    display: block;
+    margin: 0 auto;
 }
 #tic-header{
     text-align: center;
+    color: white;
 }
 @media (1px <= width <= 769px) {
     main{

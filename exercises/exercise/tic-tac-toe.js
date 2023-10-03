@@ -9,9 +9,12 @@ for(let field of fields){
                 head.innerText = play+ " turn";
                 if(play!=="X"){
                     play = "X";
+                    field.style.backgroundColor = "#5787df";
+
                 }
                 else{
                     play="O";
+                    field.style.backgroundColor = "#5d547a";
                 }
                 field.innerText = play;
                 count++;
@@ -19,6 +22,7 @@ for(let field of fields){
             if(checkWinner()){
                 head.innerText = play + " Won!"
             }
+            else if(count==9) head.innerText = "Draw";
         }
 
         
@@ -48,3 +52,15 @@ function checkWinner(){
     }
     return false
 }
+
+const resetBtn = document.getElementById("reset");
+
+resetBtn.addEventListener("click", ()=>{
+    for(const field of fields){
+        field.innerText = "";
+        count=0;
+        field.style.backgroundColor ="#54617a";
+        play="O";
+        head.innerText="Start the game";    
+    }
+})

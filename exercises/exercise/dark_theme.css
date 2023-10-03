@@ -166,6 +166,26 @@ main div img{
     height:15px;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50vh;
+}
+.card{
+    height: 30%;
+    width: 25%;
+    margin: 0 3%;
+}
+.card-body{
+    text-align: center;
+    font-size: 5rem;
+    
+}
+#tic-header{
+    text-align: center;
+}
 @media (1px <= width <= 769px) {
     main{
         max-width: 100%;
@@ -187,3 +207,4 @@ main div img{
         height:25px;
     }
 }
+

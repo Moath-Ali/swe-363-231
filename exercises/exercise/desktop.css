@@ -1,0 +1,186 @@
+html{
+    background-color:  #2E3440;
+    color: rgb(182, 88, 0);
+
+}
+table{
+    border: solid rgb(183, 88, 0);
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(206, 255, 255);
+}
+.red:hover > .last, .red:hover {
+    
+    background-color: lightblue;
+    
+}
+.last {
+    background-color: black;
+}
+
+h1{
+    color:  rgb(183, 88, 0); 
+    font-size: 34px; 
+    font-family: Aeonik; 
+    font-weight: 400; 
+    letter-spacing: 0.25px;
+    word-wrap: break-word;
+}
+p{
+    color:  rgb(183, 88, 0); 
+    font-size: 12px; 
+    font-family: Source Code Pro; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+button:hover{
+    background-color: lightblue;
+    transition:  1s;
+}
+.nav{
+    margin: 0;
+    background-color: rgba(192, 175, 175, 0.193);
+
+    display: flex;
+    align-items: center;
+}
+
+nav img:hover+ .links #first{
+    color: white;
+    transition: 0.5s;
+}
+nav img:hover+ .links #second{
+    color: white;
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+nav img:hover+ .links #third{
+    color: white;
+    transition: 0.5s;
+    transition-delay: 1.5s;
+}
+.links a{
+    color: transparent;
+}
+a{
+    color:rgb(183, 88, 0);
+    margin: 5px 5px;
+}
+.loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  rgb(47,2,75);
+    display: flex;
+
+    animation-duration: 3s;
+    animation-name: loader;
+    animation-fill-mode: forwards;
+}
+@keyframes loader {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+    
+}
+
+body *:not(.loader){
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-name: body;
+    animation-fill-mode: forwards;
+}
+@keyframes body {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+.loader img{
+    margin: 0 auto;
+}
+main{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-heading{
+    text-align: center;
+}
+.catchy-p{
+    text-align: center;
+}
+
+
+nav{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watermark{
+    font-size: large;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+}
+.date{
+    display: inline ;
+}
+.title-of-card{
+    display: inline ;
+}
+.card-title-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main div img{
+    max-width: 100%;
+}
+#burger{
+    width:15px; 
+    height:15px;
+}
+
+@media (1px <= width <= 769px) {
+    main{
+        max-width: 100%;
+    }
+    main div img{
+        max-width: 100%;
+    }
+    table{
+        font-size: 2em;
+    }
+    footer{
+        font-size: 1.2em;
+    }
+    .catchy-p{
+        font-size: 1.5em;
+    }
+    #burger{
+        width:25px;
+        height:25px;
+    }
+}

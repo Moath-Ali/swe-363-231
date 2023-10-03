@@ -162,6 +162,9 @@ main div img{
     width:15px; 
     height:15px;
 }
+h1{
+    margin-top:20px;
+}
 
 @media (1px <= width <= 769px) {
     main{

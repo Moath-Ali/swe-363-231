@@ -6,9 +6,12 @@ html{
 table{
     border: solid rgb(183, 88, 0);
 }
+tbody tr:nth-child(odd){
+    background-color: rgb(97, 255, 255);
+}
 .red:hover > .last, .red:hover {
     
-    background-color: red;
+    background-color: lightblue;
     
 }
 .last {
@@ -16,7 +19,7 @@ table{
 }
 
 h1{
-    color: white; 
+    color:  rgb(183, 88, 0); 
     font-size: 34px; 
     font-family: Aeonik; 
     font-weight: 400; 
@@ -24,7 +27,7 @@ h1{
     word-wrap: break-word;
 }
 p{
-    color: white; 
+    color:  rgb(183, 88, 0); 
     font-size: 12px; 
     font-family: Source Code Pro; 
     font-weight: 400; 
@@ -105,6 +108,20 @@ body *:not(.loader){
 }
 .loader img{
     margin: 0 auto;
+}
+main{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-heading{
+    text-align: center;
+}
+.catchy-p{
+    text-align: center;
 }
 
 

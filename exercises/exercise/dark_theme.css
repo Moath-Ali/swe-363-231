@@ -1,5 +1,5 @@
 html{
-    background-color:  rgb(47,2,75);
+    background-color:  #2E3440;
     color: rgb(182, 88, 0);
 
 }
@@ -7,7 +7,7 @@ table{
     border: solid rgb(183, 88, 0);
 }
 tbody tr:nth-child(odd){
-    background-color: rgb(97, 255, 255);
+    background-color: rgb(206, 255, 255);
 }
 .red:hover > .last, .red:hover {
     
@@ -47,17 +47,17 @@ button:hover{
 
 nav img:hover+ .links #first{
     color: white;
-    transition: 1s;
+    transition: 0.5s;
 }
 nav img:hover+ .links #second{
     color: white;
-    transition: 1s;
-    transition-delay: 2s;
+    transition: 0.5s;
+    transition-delay: 1s;
 }
 nav img:hover+ .links #third{
     color: white;
-    transition: 1s;
-    transition-delay: 3s;
+    transition: 0.5s;
+    transition-delay: 1.5s;
 }
 .links a{
     color: transparent;
@@ -125,4 +125,33 @@ main{
 }
 
 
+nav{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watermark{
+    font-size: large;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+}
+.date{
+    display: inline ;
+}
+.title-of-card{
+    display: inline ;
+}
+.card-title-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

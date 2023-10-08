@@ -1,8 +1,13 @@
 const links = [
     {
+        text: "الموقع باللغة العربية",
+        href: "index-ar.html"
+    },
+    {
         text: "Details",
         href: "Details-Page.html"
     },
+    
     {
         text: "Contact Us",
         href: "Contact-Page.html"
@@ -15,17 +20,14 @@ const links = [
         text: "Mini-Games",
         href: "mini-games.html"
     },
-    {
-        text: "الموقع باللغة العربية",
-        href: "index-ar.html"
-    }
 ]
 
 let footer = document.querySelector("footer");
 for(let link of links){
     let tlink = document.createElement("a");
-    tlink.title = link.text;
+    let tText = document.createTextNode(link.text);
+    tlink.appendChild(tText);
     tlink.href = link.href;
 
-    footer.appendChild(tlink);
+    footer.prepend(tlink);
 }

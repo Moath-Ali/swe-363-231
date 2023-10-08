@@ -234,6 +234,5 @@ main div img{
 #alert{
     display: block;
     position: static;
-    z-index: 2;
 }
 

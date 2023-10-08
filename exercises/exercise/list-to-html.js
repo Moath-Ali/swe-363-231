@@ -25,8 +25,7 @@ const links = [
 let footer = document.querySelector("footer");
 for(let link of links){
     let tlink = document.createElement("a");
-    let tText = document.createTextNode(link.text);
-    tlink.appendChild(tText);
+    tlink.innerText = link.text;
     tlink.href = link.href;
 
     footer.prepend(tlink);

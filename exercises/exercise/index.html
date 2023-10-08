@@ -13,11 +13,19 @@
 </head>
 
 <body>
+    
+
     <div class="loader">
         <img class="loader" src="/exercises/exercise/Resources/loader-image.png" alt="">
     </div>
+    <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Use the tab button to navegate between the links, and the arrow buttons to navegate the page</strong>
+        <button id="closeBtn" type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     <nav class="nav">
-        <img id="burger" src="/exercises/exercise/Resources/ham_icon.png" alt="nav icon">
+        <a href=""><img id="burger" src="/exercises/exercise/Resources/ham_icon.png" alt="nav icon"></a>
         <div class="links">
             <a id="first" href="Details-Page.html">Details</a>
             <a id="second" href="Contact-Page.html">Contact Us</a>
@@ -25,6 +33,8 @@
         </div>
 
     </nav>
+
+
     <main>
         <h1 class="main-heading">Start Learning The Things You're Interested In TODAY!!</h1>
         <div style="position: relative;">

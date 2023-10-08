@@ -30,3 +30,11 @@ for(let link of links){
 
     footer.prepend(tlink);
 }
+
+
+//this is to remove the alert
+const cbtn = document.getElementById("closeBtn");
+const alert = document.querySelector("alert") ;
+cbtn.addEventListener("click",()=>{
+    alert.remove();
+})

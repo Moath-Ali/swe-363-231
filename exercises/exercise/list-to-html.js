@@ -38,3 +38,21 @@ const alert = document.querySelector("alert") ;
 cbtn.addEventListener("click",()=>{
     alert.remove();
 })
+
+
+//api stuff
+fetch("https://api.api-ninjas.com/v1/hobbies?category=general", {
+    headers:{
+        'X-Api-Key': 'n93UmEBxz5jz+Khk/jXJVQ==6d4CRkFR46xH80UN'
+    }
+})
+.then((res)=>{
+    return res.json();
+})
+.then((data) =>{
+    const h2 = document.getElementById("hobby");
+    h2.innerText = h2.innerText+" "+data.hobby
+})
+.catch((e)=>{
+    console.log("ERROR",e);
+})

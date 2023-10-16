@@ -108,7 +108,7 @@ function countdown(){
     setInterval(function() {
         count--;
         console.log(count);
-        if (count === 0) {
+        if (count <= 0) {
           clearInterval(1);
           document.getElementById("screenCanv").style.display = "block"
           document.getElementById("screenCanv").style.position = "fixed"

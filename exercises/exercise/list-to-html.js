@@ -37,13 +37,14 @@ for(let link of links){
 
 
 let footer = document.querySelector("footer");
-for(let link of listOfObject){
+
+listOfObject.map((link)=>{
     let tlink = document.createElement("a");
     tlink.innerText = link.text;
     tlink.href = link.href;
 
     footer.prepend(tlink);
-}
+})
 
 
 //this is to remove the alert

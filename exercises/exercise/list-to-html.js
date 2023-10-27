@@ -1,3 +1,12 @@
+class footerItem{
+    constructor(text,href){
+        this.text = text;
+        this.href = href;
+    }
+
+}
+
+
 const links = [
     {
         text: "الموقع باللغة العربية",
@@ -21,9 +30,14 @@ const links = [
         href: "mini-games.html"
     },
 ]
+let listOfObject = []
+for(let link of links){
+    listOfObject.push(new footerItem(link.text, link.href));
+}
+
 
 let footer = document.querySelector("footer");
-for(let link of links){
+for(let link of listOfObject){
     let tlink = document.createElement("a");
     tlink.innerText = link.text;
     tlink.href = link.href;

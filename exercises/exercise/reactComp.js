@@ -1,12 +1,12 @@
-"use strict";
-function reactFunction(){
-    return (<div>all rights belong to Alabeedi group</div>);
+const header = React.createElement(
+    "header",
+    null,
+    React.createElement("h1",null,"Hello, ","sdadsa","!"),
+);
+
+
+export default function app(){
+    return (
+        <div>sssss</div>
+    );
 }
-
-
-
-
-
-const domNode = document.getElementById("reactComponent");
-const root = ReactDOM.createRoot(domNode);
-root.render(<reactFunction />);

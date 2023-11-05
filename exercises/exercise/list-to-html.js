@@ -3,9 +3,9 @@ class footerItem{
         this.text = text;
         this.href = href;
     }
+    
 
 }
-
 
 const links = [
     {

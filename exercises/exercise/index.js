@@ -3,7 +3,7 @@ const app = express();
 
 const router = require('./router');
 
-app.use("/Thanks.htm",function (req,res,next){
+app.use("/Thanks.html",function (req,res,next){
     console.log("Your request has been processed!!!")
     next();
 })
